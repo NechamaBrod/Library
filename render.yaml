@@ -1,0 +1,18 @@
+# Render Blueprint: שירות אחד חינמי שמריץ את האתר ואת ה-MCP.
+services:
+  - type: web
+    name: library
+    runtime: node
+    plan: free
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: DATABASE_URL # כתובת החיבור ל-Supabase (Session pooler)
+        sync: false
+      - key: APP_PASSWORD # הסיסמה לכניסה לאתר
+        sync: false
+      - key: MCP_TOKEN # נוצר אוטומטית; משמש בכתובת ה-MCP
+        generateValue: true
