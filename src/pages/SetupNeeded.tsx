@@ -11,7 +11,7 @@ export default function SetupNeeded() {
           <li>פרויקט Supabase שבו הורצו קובצי ה־migrations שבתיקייה <code dir="ltr">supabase/migrations</code>.</li>
           <li>
             קובץ <code dir="ltr">.env</code> בשורש הפרויקט עם שני ערכים ציבוריים:
-            <pre dir="ltr" style={{ background: "#f3ebd9", padding: 12, borderRadius: 8, overflowX: "auto" }}>
+            <pre dir="ltr" style={{ background: "#f5ecea", padding: 12, borderRadius: 8, overflowX: "auto" }}>
 {`VITE_SUPABASE_URL=https://<project>.supabase.co
 VITE_SUPABASE_ANON_KEY=<anon / publishable key>`}
             </pre>

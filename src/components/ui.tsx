@@ -98,7 +98,7 @@ export function ConfirmButton({
   return (
     <button
       type="button"
-      className={armed ? `${className} accent` : className}
+      className={armed ? `${className} armed` : className}
       disabled={busy}
       onClick={() => {
         if (!armed) return setArmed(true);

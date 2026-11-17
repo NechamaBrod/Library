@@ -14,10 +14,10 @@ export default function Layout({ children }: { children: ReactNode }) {
         <div className="inner">
           <Link to="/" className="brand">
             <svg className="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-              <rect x="4" y="6" width="6" height="21" rx="1.5" fill="#46624e" />
-              <rect x="12" y="3" width="6" height="24" rx="1.5" fill="#b5553a" />
-              <rect x="20" y="9" width="6" height="18" rx="1.5" fill="#7c9a82" transform="rotate(8 23 18)" />
-              <rect x="2" y="27" width="28" height="2.5" rx="1" fill="#2e2a25" />
+              <rect x="4" y="6" width="6" height="21" rx="1.5" fill="#be185d" />
+              <rect x="12" y="3" width="6" height="24" rx="1.5" fill="#d97706" />
+              <rect x="20" y="9" width="6" height="18" rx="1.5" fill="#0f766e" transform="rotate(8 23 18)" />
+              <rect x="2" y="27" width="28" height="2.5" rx="1" fill="#292524" />
             </svg>
             הספרייה שלי
           </Link>
